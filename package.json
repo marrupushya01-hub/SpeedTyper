@@ -1,0 +1,29 @@
+{
+  "name": "speedtyper",
+  "version": "1.0.0",
+  "description": "Helps you type fast~real fast!!",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marrupushya01-hub/SpeedTyper.git"
+  },
+  "keywords": [
+    "typing",
+    "speed",
+    "practice",
+    "wpm"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marrupushya01-hub/SpeedTyper/issues"
+  },
+  "homepage": "https://github.com/marrupushya01-hub/SpeedTyper#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
