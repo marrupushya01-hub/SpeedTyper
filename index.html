@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#c9c9c6">
+  <title>Speed Typer — Mission Control</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Didact+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div class="space-art-layer" aria-hidden="true">
+    <img class="space-art art-alien" src="assets/alien.png" alt="">
+    <img class="space-art art-saturn" src="assets/saturn.png" alt="">
+    <img class="space-art art-ufo" src="assets/ufo.png" alt="">
+    <img class="space-art art-astronaut" src="assets/astronaut.png" alt="">
+    <img class="space-art art-telescope" src="assets/telescope.png" alt="">
+  </div>
+
+  <main class="container">
+    <header class="game-header">
+      <p class="eyebrow">A little practice, one giant leap</p>
+      <h1>Speed Typer</h1>
+      <p class="best">All-Time Best: <span id="best-score">0</span> WPM</p>
+
+      <div class="difficulty">
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty" name="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+
+      <div class="stats" aria-live="polite">
+        <p>Time: <span id="time">60</span>s</p>
+        <p>WPM: <span id="wpm">0</span></p>
+        <p>Accuracy: <span id="accuracy">100</span>%</p>
+        <p>Errors: <span id="errors">0</span></p>
+      </div>
+    </header>
+
+    <section class="game-area" aria-label="Typing test">
+      <div id="passage" aria-label="Text to type"></div>
+      <textarea
+        id="input"
+        placeholder="Start typing from here  ->"
+        spellcheck="false"
+        autocomplete="off"
+        autocapitalize="off"
+        aria-label="Type the passage here"
+      ></textarea>
+      <div id="result" role="status" aria-live="polite"></div>
+      <button id="restart" type="button">Restart mission</button>
+    </section>
+    <footer class="footer-note">KEEP YOUR EYES ON THE STARS. KEEP YOUR FINGERS MOVING.</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
